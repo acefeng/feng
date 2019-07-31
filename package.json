@@ -24,6 +24,7 @@
     "koa-static": "^3.0.0",
     "koa-views": "^5.2.1",
     "moment": "^2.24.0",
+    "pre-commit": "^1.2.2",
     "eslint": "^4.15.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-friendly-formatter": "^3.0.0",
