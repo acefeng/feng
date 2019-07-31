@@ -1,0 +1,20 @@
+{
+    // "extends": ["@ks/eslint-config"],
+    "env": {
+        "browser": false
+    },
+    "rules": {
+        "linebreak-style": ["error", "unix"],
+        "semi": ["error", "always"],
+        "vue/no-parsing-error": [0],
+        "no-nested-ternary": [1], // 尽量不用嵌套的三元表达式
+        "no-console": 0, //可以使用console
+        "max-params": [1,6], //最大参数
+        "no-path-concat": 1, //path使用
+        "no-undef": 1, //变量未定义
+        "no-unused-expressions": 1 //表达式
+    },
+    "globals": {
+        "_i18n": true
+    }
+}

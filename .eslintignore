@@ -1,0 +1,8 @@
+/bin/
+/config/
+/public/
+/setting/
+node_modules/
+/node_modules/
+/*.json
+

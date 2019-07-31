@@ -1,0 +1,8 @@
+{% extends '../common/layout.html' %}
+
+{% block project_style %}
+{% endblock %}
+
+{% block project_script %}
+    {{ checkEnv("/test.js") | safe }}
+{% endblock %}
