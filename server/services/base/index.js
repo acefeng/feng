@@ -1,8 +1,5 @@
 const axios = require('axios');
 class BaseServices {
-  async abc() {
-    console.log("此处为333")
-  }
   async httpGet(url, config){
     return new Promise((resolve,reject) => {
       axios.get(url,config)
@@ -12,7 +9,7 @@ class BaseServices {
       .catch((error) => {
         reject( error );
       });
-    })
+    });
   }
 
   async httpPost(url, config){
@@ -24,7 +21,7 @@ class BaseServices {
       .catch((error) => {
         reject( error );
       });
-    })
+    });
   }
 }
 

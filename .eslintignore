@@ -1,5 +1,7 @@
 /bin/
 /config/
+/client/config/
+/client/build/
 /public/
 /setting/
 node_modules/

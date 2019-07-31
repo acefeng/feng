@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    测试{{msg}}daskjhfkaksjhfjkhasddsds
+    测试{{msg}}daskjhfkaksjhfjkhasddsd2s
     <input type="text"/>
     <img src="./assets/logo.jpg"/>
     <img src="./assets/DSC02661.jpg" alt="">

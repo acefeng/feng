@@ -1,6 +1,6 @@
 const BaseControllers = require('../base/index');
 const n_env = process.env.NODE_ENV == 'development';
-const TestServices = require('../../services/test/index')
+const TestServices = require('../../services/test/index');
 
 class testControllers extends BaseControllers{
   async getIndex(ctx){

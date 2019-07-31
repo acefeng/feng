@@ -1,7 +1,9 @@
 {
-    // "extends": ["@ks/eslint-config"],
     "env": {
-        "browser": false
+        "es6": true,
+        "browser": true,
+        "commonjs": true,
+        "node": true
     },
     "rules": {
         "linebreak-style": ["error", "unix"],
@@ -13,6 +15,11 @@
         "no-path-concat": 1, //path使用
         "no-undef": 1, //变量未定义
         "no-unused-expressions": 1 //表达式
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
     },
     "globals": {
         "_i18n": true
