@@ -10,17 +10,25 @@ const viewsEnv = require('../setting/viewsEnv');
 const appSession = require('../setting/appSession');
 const appLogger = require('../setting/appLogger');
 
-
-viewsEnv(app); // 以下对于模板引擎进行操作
-onerror(app); // 错误输出
-app.use(bodyparser({ 
+// 对于请求体进行处理
+app.use(bodyparser({
   enableTypes:['json', 'form', 'text']
 }));
 app.use(json());
-app.use(require('koa-static')(path.join(__dirname + '/../public'))); // 静态文件
-appSession(app); // koa实例的session控制
-appLogger(app); // logger
-app.use(routerBase.routes(), routerBase.allowedMethods()); // routes
+
+// 以下对于模板引擎进行操作
+viewsEnv(app); 
+// 错误输出
+onerror(app); 
+// koa实例的session控制
+appSession(app);
+// logger 
+appLogger(app); 
+
+// 静态文件
+app.use(require('koa-static')(path.join(__dirname + '/../public'))); 
+// 路由控制
+app.use(routerBase.routes(), routerBase.allowedMethods()); 
 // error-handling
 app.on('error', (err, ctx) => {
   console.error('server error', err, ctx);
