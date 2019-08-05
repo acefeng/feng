@@ -1,22 +1,22 @@
 'use strict'
 const path = require('path')
+const ports = 8080
 
 module.exports = {
   dev: {
     assetsSubDirectory: '',
-    assetsPublicPath: '/dist/',
+    assetsPublicPath: 'http://localhost:'+ ports +'/dist/',
     proxyTable: {},
     host: 'localhost', // can be overwritten by process.env.HOST
-    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    port: ports, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
-
-    /**
-     * Source Maps
-     */
-
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "PUT,DELETE,POST,GET"
+    },
     // https://webpack.js.org/configuration/devtool/#development
     devtool: '#eval-source-map',
 

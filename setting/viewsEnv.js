@@ -10,7 +10,7 @@ module.exports = function (app){
         html: 'nunjucks'
       },
       options: {
-        checkEnv(fileName) {
+        loadJs(fileName) {
           return `<script src=//localhost:${config.dev.port}/dist${fileName}></script>`
         }
       }
@@ -22,7 +22,7 @@ module.exports = function (app){
         html: 'nunjucks'
       },
       options: {
-        checkEnv(fileName) {
+        loadJs(fileName) {
           return `<script src=/js${fileName}></script>`
         }
       }

@@ -30,6 +30,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       : false,
     publicPath: config.dev.assetsPublicPath,
     proxy: config.dev.proxyTable,
+    headers: config.dev.headers,
     // quiet: true, // 是否需要显示打包信息
     watchOptions: {
       poll: config.dev.poll,

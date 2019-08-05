@@ -4,5 +4,5 @@
 {% endblock %}
 
 {% block project_script %}
-    {{ checkEnv("/test.js") | safe }}
+    {{ loadJs("/test.js") | safe }}
 {% endblock %}

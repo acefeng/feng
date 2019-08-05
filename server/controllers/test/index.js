@@ -5,7 +5,7 @@ const TestServices = require('../../services/test/index');
 class testControllers extends BaseControllers{
   async getIndex(ctx){
     const testServices = new TestServices();
-    await testServices.addUser("此处11111");
+    // await testServices.addUser("此处11111");
     await ctx.render('pages/test', {
         title: '后台商品管理系统',
         n_env,

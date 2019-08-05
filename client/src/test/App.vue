@@ -2,6 +2,9 @@
   <div id="app">
     测试{{msg}}daskjhfkaksjhfjkhasddsd2s
     <input type="text"/>
+    <i-input :value.sync="value" placeholder="请输入..." style="width: 300px"></i-input>
+    <Icon type="navicon-round"></Icon>
+     <i-button type="primary" shape="circle" icon="ios-search"></i-button>
     <img src="./assets/logo.jpg"/>
     <img src="./assets/DSC02661.jpg" alt="">
   </div>
@@ -14,8 +17,9 @@ export default {
   },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
-      num: 1
+      msg: 'Welcome to Youasdfasdfr Vue.js App',
+      num: 1,
+      value: ''
     }
   },
   methods: {
