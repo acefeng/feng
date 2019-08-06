@@ -2,7 +2,7 @@
 
 const path = require('path');
 const fs = require('fs');
-const sequelize = require('../../config/sequelize');
+const sequelize = require('../../config/sequelize'); 
 
 let models = {};
 fs.readdirSync(__dirname + '/')
