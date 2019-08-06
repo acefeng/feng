@@ -1,5 +1,5 @@
 module.exports = { 
-  plugins: { 
+  plugins: {
     'autoprefixer': {browsers: 'last 5 version'} 
   } 
 }
