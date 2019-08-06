@@ -7,7 +7,7 @@ module.exports = function (app){
     autoCommit: true,
     overwrite: true,
     httpOnly: true,
-    signed: true,
+    signed: true, 
     rolling: false,
     renew: false,
   };
