@@ -4,8 +4,8 @@ const json = require('koa-json');
 const onerror = require('koa-onerror');
 const bodyparser = require('koa-bodyparser');
 const path = require('path');
-const routerBase = require('../config/routerBase');
 
+const routerBase = require('../setting/routerBase');
 const viewsEnv = require('../setting/viewsEnv');
 const appSession = require('../setting/appSession');
 const appLogger = require('../setting/appLogger');
