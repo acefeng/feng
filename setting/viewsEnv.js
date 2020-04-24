@@ -12,6 +12,9 @@ module.exports = function (app){
       options: {
         loadJs(fileName) {
           return `<script src=//localhost:${config.dev.port}/dist${fileName}></script>`
+        },
+        loadCss(fileName) {
+          return `<link rel="stylesheet" href=//localhost:${config.dev.port}/dist${fileName}>`
         }
       }
     }))
@@ -24,6 +27,9 @@ module.exports = function (app){
       options: {
         loadJs(fileName) {
           return `<script src=/js${fileName}></script>`
+        },
+        loadCss(fileName) {
+          return `<link rel="stylesheet" href=/css${fileName}>`
         }
       }
     }))

@@ -20,7 +20,6 @@ function getEntryList() {
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
-
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: getEntryList(),
@@ -54,7 +53,7 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
         options: {
-          limit: 10000,
+          limit: 1000,
           name: utils.assetsPath('img/[name].[hash:7].[ext]')
         }
       },

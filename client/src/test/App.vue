@@ -22,6 +22,11 @@ export default {
       value: ''
     }
   },
+  mounted () {
+    console.log(`
+    ${12312312123}
+    `);
+  },
   methods: {
    
   }
